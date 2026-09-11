@@ -56,3 +56,11 @@ they are not implemented in this initial script.
 duplicate identity, timestamp validation, outlier screening and normalization.
 The pipeline was executed on explicitly synthetic Olist-shaped records; four
 focused tests passed. [Download week2.docx](week2/week2.docx).
+
+## Week 3 — Advanced analysis and visualization
+
+[Week 3 analysis and run instructions](week3/README.md) cover a reproducible
+hypothetical dataset of 2,329 shipments, descriptive statistics, correlations,
+and six charts. All findings describe the simulation, not real operations.
+[Download week3.docx](week3/week3.docx). The Python script regenerates the data,
+charts and summary tables locally.

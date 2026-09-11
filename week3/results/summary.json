@@ -1,0 +1,44 @@
+{
+  "mode": "SYNTHETIC ONLY",
+  "seed": 42,
+  "shipments": 2329,
+  "days": 84,
+  "on_time_pct": 85.27264920566768,
+  "late_shipments": 343,
+  "total_cost_inr": 1186235.9671900743,
+  "mean_cost_inr": 509.33274675400355,
+  "mean_delivery_hours": 40.47239545108598,
+  "median_delivery_hours": 40.19116735717932,
+  "p90_delivery_hours": 58.10346044820488,
+  "late_mean_hours": 6.757120832253376,
+  "iqr_upper_hours": 76.3693247342626,
+  "upper_tail_shipments": 11,
+  "distance_cost_pearson": 0.9824422752203079,
+  "distance_cost_spearman": 0.9828845725949058,
+  "weight_cost_pearson": 0.12405143762624646,
+  "daily_volume_hub_pearson": 0.9144470389609178,
+  "busy_days": 20,
+  "other_days": 64,
+  "busy_day_mean_hub": 25.681820292757713,
+  "other_day_mean_hub": 12.052124553072158,
+  "modal_region": "North",
+  "phases": {
+    "First 8 weeks": {
+      "shipments": 1344,
+      "on_time": 0.9501488095238095,
+      "hub": 13.350983108704513,
+      "cost": 501.5902010675112
+    },
+    "Last 4 weeks": {
+      "shipments": 985,
+      "on_time": 0.7197969543147208,
+      "hub": 22.465882273621656,
+      "cost": 519.8971948785169
+    }
+  },
+  "versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  }
+}

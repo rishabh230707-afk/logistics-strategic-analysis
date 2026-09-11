@@ -64,3 +64,12 @@ hypothetical dataset of 2,329 shipments, descriptive statistics, correlations,
 and six charts. All findings describe the simulation, not real operations.
 [Download week3.docx](week3/week3.docx). The Python script regenerates the data,
 charts and summary tables locally.
+
+## Week 4 — Predictive modeling and optimization
+
+[Week 4 model, validation and run instructions](week4/README.md) document
+next-day demand forecasting, chronological cross-validation, a separate
+calibration buffer and exact enumeration of constrained staffing decisions.
+The executed results compare cost and overflow on a synthetic holdout.
+[Download week4.docx](week4/week4.docx). All demand, costs and capacity are
+hypothetical; these are not measured business savings.

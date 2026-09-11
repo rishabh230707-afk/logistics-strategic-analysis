@@ -1,0 +1,4 @@
+policy,worker_days,mean_workers,labour_inr,outsourced_shipments,outsourced_pct,days_without_overflow,total_cost_inr
+Fixed staffing,336,6.0,302400,260,1.9243579305750869,47,312800
+Forecast only,326,5.821428571428571,293400,68,0.5032936126119458,51,296120
+Buffered forecast,346,6.178571428571429,311400,0,0.0,56,311400

@@ -1,0 +1,104 @@
+{
+  "scope": "SYNTHETIC ONLY; no measured business savings",
+  "seed": 42,
+  "raw_days": 420,
+  "usable_days": 392,
+  "winner": "Ridge alpha 0.1",
+  "buffer_shipments": 16.277827948804486,
+  "calibration_empirical_coverage": 0.9285714285714286,
+  "test_buffer_coverage": 0.875,
+  "test_shipments": 13511,
+  "fixed_workers": 6,
+  "test_metrics": [
+    {
+      "model": "Ridge alpha 0.1",
+      "MAE": 11.47619882449686,
+      "RMSE": 14.504070039325729,
+      "R2": 0.8544615075616906,
+      "bias_pred_minus_actual": -0.8678893003772886
+    },
+    {
+      "model": "Seasonal naive",
+      "MAE": 28.142857142857142,
+      "RMSE": 37.19062861989371,
+      "R2": 0.043103130675840595,
+      "bias_pred_minus_actual": -9.642857142857142
+    }
+  ],
+  "policies": [
+    {
+      "policy": "Fixed staffing",
+      "worker_days": 336,
+      "mean_workers": 6.0,
+      "labour_inr": 302400,
+      "outsourced_shipments": 260,
+      "outsourced_pct": 1.9243579305750869,
+      "days_without_overflow": 47,
+      "total_cost_inr": 312800
+    },
+    {
+      "policy": "Forecast only",
+      "worker_days": 326,
+      "mean_workers": 5.821428571428571,
+      "labour_inr": 293400,
+      "outsourced_shipments": 68,
+      "outsourced_pct": 0.5032936126119458,
+      "days_without_overflow": 51,
+      "total_cost_inr": 296120
+    },
+    {
+      "policy": "Buffered forecast",
+      "worker_days": 346,
+      "mean_workers": 6.178571428571429,
+      "labour_inr": 311400,
+      "outsourced_shipments": 0,
+      "outsourced_pct": 0.0,
+      "days_without_overflow": 56,
+      "total_cost_inr": 311400
+    }
+  ],
+  "sensitivity": [
+    {
+      "capacity_per_worker": 40,
+      "worker_days": 383,
+      "outsourced_shipments": 14,
+      "cost_inr": 345260
+    },
+    {
+      "capacity_per_worker": 45,
+      "worker_days": 346,
+      "outsourced_shipments": 0,
+      "cost_inr": 311400
+    },
+    {
+      "capacity_per_worker": 50,
+      "worker_days": 319,
+      "outsourced_shipments": 11,
+      "cost_inr": 287540
+    }
+  ],
+  "splits": {
+    "development": {
+      "days": 308,
+      "start": "2025-01-29",
+      "end": "2025-12-02"
+    },
+    "calibration": {
+      "days": 28,
+      "start": "2025-12-03",
+      "end": "2025-12-30"
+    },
+    "test": {
+      "days": 56,
+      "start": "2025-12-31",
+      "end": "2026-02-24"
+    }
+  },
+  "checks": "Chronology, unique dates, missingness, nonnegative demand, no target leakage in features, staffing bounds and cost reconciliation passed",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0",
+    "matplotlib": "3.10.8"
+  }
+}

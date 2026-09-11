@@ -1,0 +1,72 @@
+{
+  "input_orders": 82,
+  "input_customers": 81,
+  "missing_before_cleaning": {
+    "order_id": 1,
+    "customer_id": 0,
+    "order_status": 0,
+    "order_purchase_timestamp": 0,
+    "order_delivered_customer_date": 2,
+    "order_estimated_delivery_date": 2
+  },
+  "exact_order_duplicates_removed": 1,
+  "exact_customer_duplicates_removed": 1,
+  "order_identity_rows_quarantined": 3,
+  "customer_identity_rows_quarantined": 0,
+  "invalid_states_set_missing": 1,
+  "malformed_dates": {
+    "order_purchase_timestamp": 1,
+    "order_delivered_customer_date": 0,
+    "order_estimated_delivery_date": 0
+  },
+  "unmatched_customers": 1,
+  "negative_promises_set_missing": 1,
+  "retained_orders": 78,
+  "duration_eligible": 74,
+  "otd_eligible": 71,
+  "excluded_duration_reasons": {
+    "missing_or_invalid_date": 2,
+    "negative_delivery_duration": 1,
+    "not_delivered": 1
+  },
+  "preprocessing": {
+    "train_orders": 44,
+    "holdout_orders": 30,
+    "outside_training_or_holdout": 0,
+    "feature_count": 8,
+    "train_missing_promises_imputed": 2,
+    "holdout_missing_promises_imputed": 1,
+    "training_median_promise_days": 11.375,
+    "training_scaler_mean": 11.40435606060606,
+    "training_scaler_scale": 1.2935463945046564,
+    "train_scaled_mean": 1.0092936587501423e-17,
+    "train_scaled_std": 1.0,
+    "holdout_scaled_max": 83.95187401142961,
+    "duration_iqr_lower_days": -1.375,
+    "duration_iqr_upper_days": 15.625,
+    "duration_outliers_flagged_and_retained": 2,
+    "nonfinite_feature_values": 0,
+    "unseen_holdout_states": [
+      "AM"
+    ],
+    "feature_names": [
+      "numeric__promise_days",
+      "state__customer_state_MG",
+      "state__customer_state_RJ",
+      "state__customer_state_SP",
+      "state__customer_state_Unknown",
+      "other__promise_missing",
+      "other__hour_sin",
+      "other__hour_cos"
+    ]
+  },
+  "source": {
+    "mode": "SYNTHETIC DEMONSTRATION",
+    "seed": "deterministic formulas; no randomness"
+  },
+  "versions": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit-learn": "1.8.0"
+  }
+}

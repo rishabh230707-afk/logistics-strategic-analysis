@@ -49,3 +49,10 @@ Collect and audit data → establish KPIs → explore delay patterns → build a
 validate a temporal model → design a controlled operational pilot → monitor.
 Clustering and vehicle routing are proposed extensions described in the report;
 they are not implemented in this initial script.
+
+## Week 2 — Data preprocessing
+
+[Week 2 report and runnable demonstration](week2/README.md) cover missing values,
+duplicate identity, timestamp validation, outlier screening and normalization.
+The pipeline was executed on explicitly synthetic Olist-shaped records; four
+focused tests passed. [Download week2.docx](week2/week2.docx).
